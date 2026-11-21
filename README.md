@@ -1,6 +1,6 @@
 # Zertifikate-Bericht – abgelaufene und bald ablaufende Zertifikate auf Windows-Servern finden
 
-Kostenloses PowerShell-Skript: liest die Zertifikate auf Windows-Servern aus und meldet, **welche abgelaufen sind, bald ablaufen oder schwach sind – und welche davon ein Dienst tatsächlich verwendet** (HTTPS oder Remotedesktop). Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Das Skript arbeitet **ausschließlich lesend**: Es installiert, löscht oder erneuert keine Zertifikate, ändert keine Bindungen und überträgt keine Daten. Private Schlüssel werden nicht gelesen, nur ob einer vorhanden ist.
+Kostenloses PowerShell-Skript: liest die Zertifikate auf Windows-Servern aus und meldet, **welche abgelaufen sind, bald ablaufen oder schwach sind – und welche davon ein Dienst tatsächlich verwendet** (HTTPS oder Remotedesktop). Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Das Skript arbeitet **ausschließlich lesend**: Es installiert, löscht oder erneuert keine Zertifikate, ändert keine Bindungen und sendet keine Daten an Dritte oder ins Internet. Private Schlüssel werden nicht gelesen, nur ob einer vorhanden ist.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -92,7 +92,7 @@ Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, H
 
 ### English
 
-Free, read-only PowerShell script that reads certificates on Windows servers and reports expired, soon-to-expire and weak certificates, and which of them a service actually uses (HTTPS bindings, Remote Desktop). HTML report in German or English (`-Language de|en`) with findings and recommendations. Nothing is changed and no data is sent anywhere (with remote queries the certificate data travels from the target computer to the computer running the script). Run: `powershell -ExecutionPolicy Bypass -File .\Zertifikate-Bericht.ps1`.
+Free, read-only PowerShell script that reads certificates on Windows servers and reports expired, soon-to-expire and weak certificates, and which of them a service actually uses (HTTPS bindings, Remote Desktop). HTML report in German or English (`-Language de|en`) with findings and recommendations. Nothing is changed and no data is sent to third parties or the internet (with remote queries the certificate data travels from the target computer to the computer running the script). Run: `powershell -ExecutionPolicy Bypass -File .\Zertifikate-Bericht.ps1`.
 
 <!-- querverweis-en:anfang -->
 #### All scripts and templates

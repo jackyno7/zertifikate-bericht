@@ -31,8 +31,7 @@
     Deutsch:
     Das Skript arbeitet ausschließlich LESEND. Es liest die Zertifikatspeicher "Eigene Zertifikate", "Remotedesktop"
     und "WebHosting" des Computers, die Zuordnung von Zertifikaten zu HTTPS-Bindungen (HTTP.sys) und zu Remotedesktop in
-    der Registrierung. Es installiert, löscht oder erneuert keine Zertifikate, ändert keine Bindungen und überträgt keine
-    Daten. Private Schlüssel werden nicht gelesen, nur ob einer vorhanden ist.
+    der Registrierung. Es installiert, löscht oder erneuert keine Zertifikate, ändert keine Bindungen und sendet keine Daten an Dritte oder ins Internet. Private Schlüssel werden nicht gelesen, nur ob einer vorhanden ist.
 
     Es prüft immer den Computer, auf dem es läuft (außer mit -OhneLokalen). Mit -Computer oder -AusAD fragt es weitere
     Computer über die PowerShell-Fernverwaltung (WinRM) ab. Dazu muss WinRM dort erreichbar sein, das Skript ändert keine Einstellungen,
